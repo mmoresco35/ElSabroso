@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ElSabroso</string>
+    <string name="phone">555666777</string>
+    <string name="about_us">About us:</string>
+    <string name="cheapest">Also the cheapest !!!!!</string>
+    <string name="direction">C/Hontanares 16 (San Blas District)</string>
+    <string name="name">CHICKEN RUN!</string>
+    <string name="specialties">Our specialties:</string>
+    <string name="descripion1">Since 1856 we are the local reference point offering our customers delicious takeaways.</string>
+    <string name="subname">The best roasted chickens in Madrid</string>
+    <string name="description2">We cook for you wonderful homemade meals at prices so low you can not believe it.</string>
+    <string name="where">Where to find us:</string>
+    <string name="description3">You must try our specialty in roasted chickens as well as the rest of our delicacies.</string>
+    <string name="web">www.chicken-run.es</string>
+    <string name="icon">icon</string>
+    <string name="croquetas">croquetas</string>
+    <string name="lasana">lasaña</string>
+    <string name="papas">papas</string>
+    <string name="pollos">pollos</string>
+    <string name="tortilla">tortilla</string>
+    <string name="map">map</string>
+    <string name="search">search</string>
+    <string name="telephone">telephone</string>
+</resources>

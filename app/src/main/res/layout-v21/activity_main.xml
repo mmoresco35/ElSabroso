@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/title_back"
+    tools:context="com.morales.miguel.elsabroso.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/title_back"
+
+        >
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pollito"
+            android:id="@+id/imageView"
+            android:contentDescription="@string/icon" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/text_color_normal"
+                android:layout_weight="1"
+                android:id="@+id/Name" />
+
+            <TextView
+                android:text="@string/subname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/text_color_normal"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/titleDescription" />
+
+            <TextView
+                android:text="@string/cheapest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_middle"
+                android:textColor="@color/text_color_contrast"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/cheapest" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.69">
+
+        <TextView
+            android:text="@string/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/text_color_normal"
+            android:textAlignment="center"
+
+            android:id="@+id/About"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2B6BF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideOverlay"
+            android:fadeScrollbars="false"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/description"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/descripion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text_color_normal"
+                    android:id="@+id/description1" />
+                <TextView
+                    android:text="@string/description3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text_color_normal"
+                    android:id="@+id/description2" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:text="@string/specialties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/text_color_normal"
+            android:textAlignment="center"
+            android:id="@+id/specialties"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/croquetas"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/croquetas" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/lasana"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/lasana"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/patatasfritas"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/papas"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/image_size"
+                    android:src="@drawable/pollos"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/pollos"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/image_size"
+                    app:srcCompat="@drawable/tortilla"
+                    android:layout_margin="0dp"
+                    android:contentDescription="@string/tortilla"
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:text="Our facilities"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/text_color_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/instalaciones"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/bar"
+            android:layout_margin="0dp"
+            android:contentDescription="bar"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/layout_bottom_margin"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="@string/where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/where"
+            android:textSize="@dimen/text_middle"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:drawableLeft="@android:drawable/ic_dialog_map"
+            android:text="@string/direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/direction"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:drawableLeft="@android:drawable/ic_menu_help"
+            android:text="@string/web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/web"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:drawableLeft="@android:drawable/ic_menu_call"
+            android:text="@string/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
